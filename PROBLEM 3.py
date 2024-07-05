@@ -1,17 +1,11 @@
 # Using chatgpt
 import os
 
-def list_directory_contents(path='.'):
-    try:
-        # Get the list of all files and directories
-        dir_list = os.listdir(path)
-        print(f"Contents of '{path}':")
-        for item in dir_list:
-            print(item)
-    except FileNotFoundError:
-        print(f"The directory '{path}' does not exist.")
-    except PermissionError:
-        print(f"Permission denied to access '{path}'.")
+# Select the directory whose content you want to list 
+directory_path = '/'
 
-# Example usage
-list_directory_contents=input('/TIT PROGRAM')
+# Use the os module to list the directory content 
+contents = os.listdir(directory_path)
+
+# Print the contents of the directory 
+print(contents)
