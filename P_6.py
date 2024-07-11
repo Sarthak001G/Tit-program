@@ -6,5 +6,6 @@ if char in tuple1 :
     for a in tuple1 :
         if a != char :
             count +=1
-        else : print (char, "is NOT in ", tuple1)
+        else : 
+            print (char, "is NOT in ", tuple1)
            
