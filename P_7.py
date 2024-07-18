@@ -1,8 +1,9 @@
-# Write program that repeatedly asks from user no until string 'done' is typed.The program should print sum  of all  numebr entered.
-total = 0
-s = input ('Enter a Numberor "done":')
-while s !='done':
-    num = int (s)
-    total = total + num
-    s = input ('Enter a Number or "done"')
-print('The sum of entered number is', total)
+#Write a program to print a square multiplicationtable as shown below :
+for row in range (1,10):
+    for col in range (1,10):
+        prod = row * col
+        if prod < 10 :
+            print (' ',prod , ' ', end = ' ')
+        else :
+            print (prod, ' ', end = ' ')
+    print()    
